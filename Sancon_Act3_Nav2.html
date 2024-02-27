@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+	overflow: hidden;
+	background-image: linear-gradient(#26324a, #263238);
+	border-top: 8px solid #263238;
+}
+
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.navbar button{
+	padding: 5px 25px;
+	bakcground-color: whitesmoke;
+	
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+
+.navbar  a:hover button:hover, .dropdown:hover .dropbtn {
+  background-color: #ff8f00;
+  color: white;
+}
+
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+
+.dropdown-content a:hover {
+  color: white;
+  background-color: gray;
+  border: 2px solid gray;
+  border-top: 2px solid white;
+  border-right: 5px solid orange;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown-content:hover .nested-dropdown {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 60px;
+  left: 147px;
+}
+.nested-dropdown {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+</style>
+</head>
+<body style="background-color:white;">
+
+
+<div class="navbar">
+ <a href="#home"><button>Home</button></a>
+ 
+  <div class="dropdown">
+   <a href="#Product"><button class="dropbtn">Product
+      <i class="fas fa-caret-down"></i>
+    </button></a>
+    <a href="#About"><button>About</button></a>
+    <a href="#Contact"><button>Contact</button></a>
+    <div class="dropdown-content">
+      <a href="#">Product 1</a>
+	<div class="nested-dropdown dropdown-content">
+	<a href="#">Sub Product</a>
+	<a href="#">Sub Product</a>
+	</div>
+      <a href="#">Product 2</a>
+	
+     
+          </div>
+  </div> 
+</div>
+</div>
+</body>
+</html>
